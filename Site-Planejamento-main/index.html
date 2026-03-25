@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FraudGuard - Prevenção no nível do código.</title>
+    <!-- Fonte Inter para simular San Francisco -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <nav class="apple-nav">
+        <div class="nav-container">
+            <div class="logo">FraudGuard</div>
+            <ul class="nav-links">
+                <li><a href="#about">Visão Geral</a></li>
+                <li><a href="#how">Arquitetura</a></li>
+                <li><a href="#rules">Inteligência</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-section" id="home">
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <h1 class="hero-title">Análise de logs.<br>Em outro patamar.</h1>
+                    <p class="hero-subtitle">O <strong>FraudGuard</strong> é um ecossistema de segurança cibernética
+                        projetado para detectar comportamentos anômalos e ataques em tempo real.</p>
+                    <div class="hero-cta">
+                        <a href="#about" class="btn btn-primary">Descubra</a>
+                        <a href="#dashboard" class="btn btn-secondary">Ver Dashboard <span class="arrow">›</span></a>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal fade-up">
+                    <div class="mac-window">
+                        <div class="mac-header">
+                            <div class="mac-btns">
+                                <span class="close"></span>
+                                <span class="min"></span>
+                                <span class="max"></span>
+                            </div>
+                            <div class="mac-title">log_analyzer.py</div>
+                        </div>
+                        <div class="mac-body" id="live-logs">
+                            <!-- JS logs -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section dark-section">
+            <div class="container container-narrow">
+                <h2 class="section-heading reveal text-center">Poderoso em Python.<br>Lindo no Browser.</h2>
+                <div class="bento-grid">
+                    <div class="bento-card bento-large reveal">
+                        <div class="bento-text">
+                            <h3>Servidor de Inteligência (Flask).</h3>
+                            <p>Uma poderosa API em Python gerencia as requisições, armazena logs silenciosamente e
+                                funciona como o cérebro central do motor de detecção.</p>
+                        </div>
+                        <div class="bento-graphic graphic-python">
+                            <div class="node-network">
+                                <span class="node n1"></span>
+                                <div class="node-line"></div>
+                                <span class="node n2"></span>
+                                <div class="node-line"></div>
+                                <span class="node n3"></span>
+                                <div class="node-line"></div>
+                                <span class="node n4"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bento-card reveal delay-1">
+                        <div class="bento-text">
+                            <h3>Segurança no nível do código.</h3>
+                            <p>O FraudGuard atua como um "vigia", ele pode monitorar tudo o que um usuário faz no site
+                                em que ele está interligado</p>
+                        </div>
+                    </div>
+                    <div class="bento-card reveal delay-2">
+                        <div class="bento-text">
+                            <h3>Dashboard de Monitoramento.</h3>
+                            <p>Consome os logs consolidados em JSON sob demanda, para renderizar mapas, gráficos e
+                                tabelas de IPs suspeitos. A fim de proporcionar um serviço importante só que de forma
+                                intuitiva. Ou seja: <strong>Juntamos a eficiência com a compreensão</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how" class="section">
+            <div class="container container-xl">
+                <div class="text-center">
+                    <h2 class="section-heading reveal">Fluxo de dados.<br>Contínuo e Offline.</h2>
+                </div>
+
+                <div class="step-sequence">
+                    <div class="step-item reveal">
+                        <div class="step-num">1</div>
+                        <div class="step-info">
+                            <h4>Interação e Registro</h4>
+                            <p>O FraudGuard consulta os dados da navegação de diversos usuários (bot ou pessoa) e os
+                                envia
+                                para o servidor.</p>
+                        </div>
+                    </div>
+                    <div class="step-item reveal delay-1">
+                        <div class="step-num">2</div>
+                        <div class="step-info">
+                            <h4>Persistência</h4>
+                            <p>O Servidor Flask armazena esse evento silenciosamente no arquivo
+                                <code>access_logs.json</code>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="step-item reveal delay-2">
+                        <div class="step-num">3</div>
+                        <div class="step-info">
+                            <h4>Análise On-Demand</h4>
+                            <p>Ao exibir o Dashboard, o <code>log_analyzer.py</code> processa os IPs e aplica as 8
+                                Regras de Detecção para determinar o risco que cada usuário oferece ao site.</p>
+                        </div>
+                    </div>
+                    <div class="step-item reveal delay-3">
+                        <div class="step-num">4</div>
+                        <div class="step-info">
+                            <h4>Visualização</h4>
+                            <p>A interface recebe os dados processados em JSON e projeta visualmente as ameaças
+                                detectadas para futuras análises.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="rules" class="section gray-section">
+            <div class="container container-xl">
+                <h2 class="section-heading reveal text-center">Inteligência focada no que importa.</h2>
+
+                <div class="rules-container grid-3">
+                    <div class="rule-box reveal">
+                        <div class="rule-icon critical-icon">!</div>
+                        <h4>Rate Limit <span>+30</span></h4>
+                        <p>Muitas requisições em poucos segundos indicando potenciais ataques DDoS ou Scripting.</p>
+                    </div>
+                    <div class="rule-box reveal delay-1">
+                        <div class="rule-icon critical-icon">!</div>
+                        <h4>Path Scan <span>+25</span></h4>
+                        <p>Tentativa de acessar caminhos sensíveis expostos, como /.env, /admin e /config.</p>
+                    </div>
+                    <div class="rule-box reveal delay-2">
+                        <div class="rule-icon high-icon">!</div>
+                        <h4>Error Flood <span>+20</span></h4>
+                        <p>IP gerando muitos erros 404 (Não Encontrado) ou 403 (Proibido) sucessivamente.</p>
+                    </div>
+                    <div class="rule-box reveal">
+                        <div class="rule-icon mid-icon">!</div>
+                        <h4>Suspicious UA <span>+15</span></h4>
+                        <p>Uso de ferramentas automatizadas de hacking detectadas (sqlmap, nmap, python-requests).</p>
+                    </div>
+                    <div class="rule-box reveal delay-1">
+                        <div class="rule-icon mid-icon">!</div>
+                        <h4>Off-hours <span>+15</span></h4>
+                        <p>Tráfego anormal restrito de madrugada (ex: 00h às 05h), sugerindo automação ou bots.</p>
+                    </div>
+                    <div class="rule-box reveal delay-2">
+                        <div class="rule-icon mid-icon">!</div>
+                        <h4>UA Rotation <span>+20</span></h4>
+                        <p>O mesmo IP alterna de User-Agent iterativamente para tentar burlar verificações simples.</p>
+                    </div>
+                    <div class="rule-box reveal">
+                        <div class="rule-icon high-icon">!</div>
+                        <h4>API Brute Force <span>+25</span></h4>
+                        <p>Excesso de requisições POST nas telas de acesso para fins de forçamento de credenciais.</p>
+                    </div>
+                    <div class="rule-box reveal delay-1">
+                        <div class="rule-icon high-icon">!</div>
+                        <h4>Missing Referrer <span>+20</span></h4>
+                        <p>Acesso direto a páginas sensíveis (como /payment) contornando totalmente a jornada normal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dashboard" class="section">
+            <div class="container">
+                <div class="dash-preview reveal">
+                    <div class="dash-text">
+                        <h2 class="section-heading">Visibilidade completa. Em tempo real.</h2>
+                        <p>Acompanhe requisições totais, identifique a Classificação de Risco (de 0-19 Normal a 90-100
+                            Crítico) e decida sobre bloqueios absolutos de IPs suspeitos.</p>
+                    </div>
+
+                    <div class="mac-window dashboard-mock reveal fade-up">
+                        <div class="mac-header">
+                            <div class="mac-btns">
+                                <span class="close"></span>
+                                <span class="min"></span>
+                                <span class="max"></span>
+                            </div>
+                            <div class="mac-title">Dashboard - report.json</div>
+                        </div>
+                        <div class="dash-content">
+                            <div class="dash-stats-row">
+                                <div class="dash-stat">
+                                    <span class="label">Reqs Totais Base</span>
+                                    <span class="value">15,420</span>
+                                </div>
+                                <div class="dash-stat critical-bg">
+                                    <span class="label">Threats Críticas</span>
+                                    <span class="value">14</span>
+                                </div>
+                            </div>
+
+                            <div class="mock-table">
+                                <div class="mock-row head">
+                                    <div class="col">IP Source</div>
+                                    <div class="col">Score Visual</div>
+                                    <div class="col text-right">Situação Risk</div>
+                                </div>
+                                <div class="mock-row">
+                                    <div class="col"><strong>192.168.1.105</strong></div>
+                                    <div class="col">
+                                        <div class="score-bar">
+                                            <div class="fill bg-crit" style="width: 95%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col text-right"><span class="pill pill-crit">Bloqueio Recomendado</span>
+                                    </div>
+                                </div>
+                                <div class="mock-row">
+                                    <div class="col"><strong>10.0.0.52</strong></div>
+                                    <div class="col">
+                                        <div class="score-bar">
+                                            <div class="fill bg-high" style="width: 75%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col text-right"><span class="pill pill-high">Alto Risco</span></div>
+                                </div>
+                                <div class="mock-row">
+                                    <div class="col"><strong>172.16.0.8</strong></div>
+                                    <div class="col">
+                                        <div class="score-bar">
+                                            <div class="fill bg-nor" style="width: 15%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col text-right"><span class="pill pill-nor">Navegação Padrão</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="apple-footer">
+        <div class="container container-xl text-center">
+            <p>FraudGuard. Detecção inteligente de logs.</p>
+            <p class="copyright">&copy; 2026. Feito por Gabriel Araujo e Leonardo</p>
+        </div>
+    </footer>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
