@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,12 @@
     <!-- Fonte Inter para simular San Francisco -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
+
 <body>
     <div class="ambient-glow glow-1"></div>
     <div class="ambient-glow glow-2"></div>
@@ -31,13 +35,14 @@
             <div class="container hero-container">
                 <div class="hero-content reveal">
                     <h1 class="hero-title">Análise de logs.<br>Em outro patamar.</h1>
-                    <p class="hero-subtitle">Venha conheçer o FraudGuard: <strong>uma ferramenta que vai mudar a forma como você vê os logs do seu servidor.</strong></p>
+                    <p class="hero-subtitle">O <strong>FraudGuard</strong> é um ecossistema de segurança cibernética
+                        projetado para detectar comportamentos anômalos e ataques em tempo real.</p>
                     <div class="hero-cta">
                         <a href="#about" class="btn btn-primary">Descubra</a>
                         <a href="#dashboard" class="btn btn-secondary">Ver Dashboard <span class="arrow">›</span></a>
                     </div>
                 </div>
-                
+
                 <div class="hero-visual reveal fade-up">
                     <div class="mac-window">
                         <div class="mac-header">
@@ -62,8 +67,9 @@
                 <div class="bento-grid">
                     <div class="bento-card bento-large reveal">
                         <div class="bento-text">
-                            <h3>Motor Analítico.</h3>
-                            <p>O <code>log_analyzer.py</code> processa milhares de requisições por segundo, aplicando heurísticas e algoritmos iterativos para criar perfis de tráfego por IP com altíssima eficiência.</p>
+                            <h3>Servidor de Inteligência (Flask).</h3>
+                            <p>Uma poderosa API em Python gerencia as requisições, armazena logs silenciosamente e
+                                funciona como o cérebro central do motor de detecção.</p>
                         </div>
                         <div class="bento-graphic graphic-python">
                             <div class="node-network">
@@ -79,14 +85,17 @@
                     </div>
                     <div class="bento-card reveal delay-1">
                         <div class="bento-text">
-                            <h3>Scoring Preciso.</h3>
-                            <p>O tráfego é agrupado, cruzado com regras avançadas de Rate Limiting e classificado em níveis de risco: Normal a Crítico.</p>
+                            <h3>Segurança no nível do código.</h3>
+                            <p>O FraudGuard atua como um "vigia", ele pode monitorar tudo o que um usuário faz no site
+                                em que ele está interligado</p>
                         </div>
                     </div>
                     <div class="bento-card reveal delay-2">
                         <div class="bento-text">
-                            <h3>Insights Visuais.</h3>
-                            <p>Toda complexidade deságua num <code>report.json</code> refinado consumido instantaneamente pelo seu dashboard HTML.</p>
+                            <h3>Dashboard de Monitoramento.</h3>
+                            <p>Consome os logs consolidados em JSON sob demanda, para renderizar mapas, gráficos e
+                                tabelas de IPs suspeitos. A fim de proporcionar um serviço importante só que de forma
+                                intuitiva. Ou seja: <strong>Juntamos a eficiência com a compreensão</strong></p>
                         </div>
                     </div>
                 </div>
@@ -98,34 +107,40 @@
                 <div class="text-center">
                     <h2 class="section-heading reveal">Fluxo de dados.<br>Contínuo e Offline.</h2>
                 </div>
-                
+
                 <div class="step-sequence">
                     <div class="step-item reveal">
                         <div class="step-num">1</div>
                         <div class="step-info">
-                            <h4>Ingestão</h4>
-                            <p>Leitura crua dos <code>access.log</code>, extraindo timestamps, métodos e origens massivamente.</p>
+                            <h4>Interação e Registro</h4>
+                            <p>O FraudGuard consulta os dados da navegação de diversos usuários (bot ou pessoa) e os
+                                envia
+                                para o servidor.</p>
                         </div>
                     </div>
                     <div class="step-item reveal delay-1">
                         <div class="step-num">2</div>
                         <div class="step-info">
-                            <h4>Processamento</h4>
-                            <p>O algoritmo traça o perfil de acesso e levanta alertas por comportamentos suspeitos e hosts.</p>
+                            <h4>Persistência</h4>
+                            <p>O Servidor Flask armazena esse evento silenciosamente no arquivo
+                                <code>access_logs.json</code>.
+                            </p>
                         </div>
                     </div>
                     <div class="step-item reveal delay-2">
                         <div class="step-num">3</div>
                         <div class="step-info">
-                            <h4>Scoring</h4>
-                            <p>Limitação matemática a 100 pontos. IPs agressores recebem selos de severidade na hora.</p>
+                            <h4>Análise On-Demand</h4>
+                            <p>Ao exibir o Dashboard, o <code>log_analyzer.py</code> processa os IPs e aplica as 8
+                                Regras de Detecção para determinar o risco que cada usuário oferece ao site.</p>
                         </div>
                     </div>
                     <div class="step-item reveal delay-3">
                         <div class="step-num">4</div>
                         <div class="step-info">
                             <h4>Visualização</h4>
-                            <p>Geração do report estático para renderização no dashboard HTML totalmente livre de back-end.</p>
+                            <p>A interface recebe os dados processados em JSON e projeta visualmente as ameaças
+                                detectadas para futuras análises.</p>
                         </div>
                     </div>
                 </div>
@@ -135,37 +150,48 @@
         <section id="rules" class="section gray-section">
             <div class="container container-xl">
                 <h2 class="section-heading reveal text-center">Inteligência focada no que importa.</h2>
-                
+
                 <div class="rules-container grid-3">
                     <div class="rule-box reveal">
                         <div class="rule-icon critical-icon">!</div>
-                        <h4>Rate Limiting <span>+30</span></h4>
-                        <p>> 100 requests em 60s pelo mesmo IP.</p>
+                        <h4>Rate Limit <span>+30</span></h4>
+                        <p>Muitas requisições em poucos segundos indicando potenciais ataques DDoS ou Scripting.</p>
                     </div>
                     <div class="rule-box reveal delay-1">
                         <div class="rule-icon critical-icon">!</div>
-                        <h4>Path Scanning <span>+25</span></h4>
-                        <p>> 20 diretórios sensíveis buscados num intervalo de 5 min.</p>
+                        <h4>Path Scan <span>+25</span></h4>
+                        <p>Tentativa de acessar caminhos sensíveis expostos, como /.env, /admin e /config.</p>
                     </div>
                     <div class="rule-box reveal delay-2">
                         <div class="rule-icon high-icon">!</div>
-                        <h4>Brute-force em API <span>+25</span></h4>
-                        <p>> 30 POSTs na camada de autenticação (/api/, /login) em 10 min.</p>
+                        <h4>Error Flood <span>+20</span></h4>
+                        <p>IP gerando muitos erros 404 (Não Encontrado) ou 403 (Proibido) sucessivamente.</p>
                     </div>
                     <div class="rule-box reveal">
                         <div class="rule-icon mid-icon">!</div>
-                        <h4>Status Flooding <span>+20</span></h4>
-                        <p>> 15 retornos de erro (4xx/5xx) consecutivos gerados pela origem.</p>
+                        <h4>Suspicious UA <span>+15</span></h4>
+                        <p>Uso de ferramentas automatizadas de hacking detectadas (sqlmap, nmap, python-requests).</p>
                     </div>
                     <div class="rule-box reveal delay-1">
                         <div class="rule-icon mid-icon">!</div>
-                        <h4>Rotação de UAs <span>+20</span></h4>
-                        <p>Alternância excessiva de User-Agents sob um mesmo IP de acesso.</p>
+                        <h4>Off-hours <span>+15</span></h4>
+                        <p>Tráfego anormal restrito de madrugada (ex: 00h às 05h), sugerindo automação ou bots.</p>
                     </div>
                     <div class="rule-box reveal delay-2">
-                        <div class="rule-icon low-icon">!</div>
-                        <h4>User-Agent Hostil <span>+15</span></h4>
-                        <p>Deteção de assinaturas de script (curl, masscan, nmap).</p>
+                        <div class="rule-icon mid-icon">!</div>
+                        <h4>UA Rotation <span>+20</span></h4>
+                        <p>O mesmo IP alterna de User-Agent iterativamente para tentar burlar verificações simples.</p>
+                    </div>
+                    <div class="rule-box reveal">
+                        <div class="rule-icon high-icon">!</div>
+                        <h4>API Brute Force <span>+25</span></h4>
+                        <p>Excesso de requisições POST nas telas de acesso para fins de forçamento de credenciais.</p>
+                    </div>
+                    <div class="rule-box reveal delay-1">
+                        <div class="rule-icon high-icon">!</div>
+                        <h4>Missing Referrer <span>+20</span></h4>
+                        <p>Acesso direto a páginas sensíveis (como /payment) contornando totalmente a jornada normal.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -176,9 +202,10 @@
                 <div class="dash-preview reveal">
                     <div class="dash-text">
                         <h2 class="section-heading">Visibilidade completa. Em tempo real.</h2>
-                        <p>Acompanhe requisições totais, identifique o Score visual e decida sobre bloqueios absolutos com as métricas do sistema e as recomendações geradas.</p>
+                        <p>Acompanhe requisições totais, identifique a Classificação de Risco (de 0-19 Normal a 90-100
+                            Crítico) e decida sobre bloqueios absolutos de IPs suspeitos.</p>
                     </div>
-                    
+
                     <div class="mac-window dashboard-mock reveal fade-up">
                         <div class="mac-header">
                             <div class="mac-btns">
@@ -199,7 +226,7 @@
                                     <span class="value">14</span>
                                 </div>
                             </div>
-                            
+
                             <div class="mock-table">
                                 <div class="mock-row head">
                                     <div class="col">IP Source</div>
@@ -208,18 +235,32 @@
                                 </div>
                                 <div class="mock-row">
                                     <div class="col"><strong>192.168.1.105</strong></div>
-                                    <div class="col"><div class="score-bar"><div class="fill bg-crit" style="width: 95%;"></div></div></div>
-                                    <div class="col text-right"><span class="pill pill-crit">Bloqueio Recomendado</span></div>
+                                    <div class="col">
+                                        <div class="score-bar">
+                                            <div class="fill bg-crit" style="width: 95%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col text-right"><span class="pill pill-crit">Bloqueio Recomendado</span>
+                                    </div>
                                 </div>
                                 <div class="mock-row">
                                     <div class="col"><strong>10.0.0.52</strong></div>
-                                    <div class="col"><div class="score-bar"><div class="fill bg-high" style="width: 75%;"></div></div></div>
+                                    <div class="col">
+                                        <div class="score-bar">
+                                            <div class="fill bg-high" style="width: 75%;"></div>
+                                        </div>
+                                    </div>
                                     <div class="col text-right"><span class="pill pill-high">Alto Risco</span></div>
                                 </div>
                                 <div class="mock-row">
                                     <div class="col"><strong>172.16.0.8</strong></div>
-                                    <div class="col"><div class="score-bar"><div class="fill bg-nor" style="width: 15%;"></div></div></div>
-                                    <div class="col text-right"><span class="pill pill-nor">Navegação Padrão</span></div>
+                                    <div class="col">
+                                        <div class="score-bar">
+                                            <div class="fill bg-nor" style="width: 15%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col text-right"><span class="pill pill-nor">Navegação Padrão</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -238,4 +279,5 @@
 
     <script src="JS/script.js"></script>
 </body>
+
 </html>
